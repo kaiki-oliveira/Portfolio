@@ -1,0 +1,185 @@
+/* slider */
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  border-radius: 10px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: var(--text-color);
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/6 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+@media(max-width: 1200px) { 
+    
+    section{
+
+        padding-left: 20px; 
+        padding-right: 20px; 
+        transition: .3s;
+    }
+    
+    .home-image img{
+        max-width: 450px; 
+        transition: .3s;
+    } 
+    
+    :root{
+        --big-font: 4rem; 
+        --h2-font: 2.5rem; 
+        --p-font: 1rem; 
+        transition: .3s;
+    }
+}
+@media(max-width: 860px) {
+    
+    .home{
+        grid-template-columns: 1fr;  
+        min-height: 100vh; 
+        grid-gap: 1rem;
+    } 
+
+    .home-image{
+        text-align: center; 
+    }
+}   
+@media(max-width: 600px) { 
+    #navbar-icon{ 
+        display: block;
+    } 
+    :root{
+        --big-font: 3rem; 
+        --h2-font: 9.rem; 
+        transition: .3s;
+    } 
+    .home{
+        min-height: 80%;
+    }
+
+    .navbar-header {
+        position: absolute;
+        top: -1000px; 
+        Left: 0; 
+        right: 0; 
+        flex-direction: column; 
+        background: #CCC; 
+        opacity: 0.8; 
+        text-align: center; 
+        transition: all .50s;
+    }
+    .navbar-header a{
+        display: block; 
+        padding: 0.8rem;
+    }
+    .navbar-header a:hover{
+        background: var(--secont-color); 
+        color: var(--bg-color);
+    }
+        
+    .navbar-header a::after{ 
+        display: none;   
+    }
+    .navbar-header.activel {
+        top: 100%;
+    }
+        
+    .services-itens {
+        grid-template-columns: 1fr;
+    }
+    .about{   
+        grid-template-columns: 1fr;
+    }
+
+    .about-imagef {
+        text-align: center;
+    }
+    .about text{
+        text-align: center;
+    }    
+    .portfolio-content {
+        grid-template-columns: 2fr;
+    }
+}

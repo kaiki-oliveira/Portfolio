@@ -1,0 +1,303 @@
+/* name: Kaiki Oliveira Nascmento dos Santos
+e-mail: kaikioliveira.95@gmail.com
+version: 3.0.1 */
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+:root{
+    --bg-color:#dbdbdb;
+    --text-color:#1c1c1c;
+    --main-color:#4400ff;
+    --secont-coolor:#6b6b6b;
+    --big-font:4.5rem;
+    --h2-font:3.2rem;
+    --p-font:1.2rem;
+}
+/*header*/
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    background-color: #5d6dff;
+}
+#header{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.logo-header img{
+    width: 60px;
+}
+.navbar-header{
+    display: flex;
+    list-style: none;
+}
+.navbar-header li{
+    position: relative;
+}
+.navbar-header a{
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    padding: 10px 20px;
+}
+.navbar-header a::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #0C0DE8;
+    bottom: -5px;
+    left: 0;
+    transition: ease .50s;
+}
+.navbar-header a:hover::after{
+    width: 100%;
+}
+#navbar-icon{
+    font-size: 25px;
+    color: var(--text-color);
+    z-index: 11;
+    cursor: pointer;
+    display: none;
+}
+.bnt-header{
+    display: inline-block;
+    padding: 10px 25px;
+    border: 2px solid var(--main-color) ;
+    border-radius: 10px;
+    color: var(--text-color);
+    letter-spacing: 1px;
+    font-size: var(--p-font);
+    font-weight: 500;
+    transition: ease .50s;
+}
+.bnt-header:hover{
+    color: var(--bg-color);
+    background: #0C0DE8;
+    transform: scale(1.2);
+}
+
+/*home*/
+section{
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+.home{
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    grid-gap: 5rem;
+}
+.home-text h1{
+    margin: 12px 0 25px 0;
+    font-size: var(--big-font);
+}
+.home-text h5{
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.home-text span{
+    color: #0C0DE8;
+}
+.home-text p{
+    font-size: var(--p-font);
+    color: var(--secont-coolor);
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.home-social-media a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--main-color);
+    color: var(--bg-color);
+    margin: 0 20px 30px 0;
+}
+.home-social-media a:hover{
+    transform: scale(1.2);
+    background: #0808d1;
+    transition: ease .50s;
+}
+.home-image{
+    border: #0808d1;
+}
+.btn{
+    display: inline-block;
+    color: var(--bg-color);
+    background: var(--main-color);
+    font-size: var(--p-font);
+    padding: 10px 35px;
+    border-radius: 10px;
+    transition: ease .50s;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+
+/*services*/
+.services-itens{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    text-align: center;
+}
+.service-item{
+    padding: 50px;
+    transition: ease .50s;
+    cursor: pointer;
+}
+.service-item-image img{
+    max-width: 100%;
+    width: 80px;
+    height: auto;
+    margin-bottom:20px;
+}
+.service-item h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+
+}
+.service-item p{
+    font-size: var(--p-font);
+    color: var(--secont-coolor);
+    line-height: 25px;
+}
+.service-item:hover{
+    background: #fff;
+    box-shadow: 20px 0 90px 0 rgb(10 10 70 / 10%);
+    border-radius: 12px;
+    will-change: transform;
+    transform: perspective(1000px) rotatex(4.80deg) rotateY(10.2deg) scale3d(1.0,1.0,1.0);
+}
+/*about*/
+.about{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    align-items: center;
+    grid-gap:2rem;
+}
+.about img{
+    max-width: 100%;
+    width: 350px;
+    height: auto;
+}
+.about-text h3{
+    font-size: 32px;
+    margin-bottom: 20px;
+
+}
+.about-text p{
+    font: var(--p-font);
+    color: var(--secont-coolor);
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+/*portfolio*/
+.portfolio-head{
+    text-align: center;
+}
+.portfolio-head h3{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.portfolio-head p{
+    font-size: var(--p-font);
+    color: var(--secont-coolor);
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.portfolio-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*contact*/
+.contact{
+    background: linear-gradient(360deg, #0D4EFF, #0C0DE8);
+    margin-top: 150px;
+    padding: 50px 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+
+}
+.contact-text h3{
+    font-size: 25px;
+    color: var(--bg-color);
+    margin-bottom: 20px;
+}
+.contact-text p{
+    font-size: var(--p-font);
+    color: var(--bg-color);
+}
+.form input[type="email"]{
+    max-width: 100%;
+    width: 450px;
+    padding: 15px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    border: none;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+.form input[type="submit"]{
+    padding: 15px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    border: none;
+    margin: 0 10px;
+    border-radius: 10px;
+    transition: ease .50s;
+}
+.form input[type="submit"]:hover{
+    transform: scale(1.2);
+}
+footer{
+    text-align: center;
+    padding: 50px 0;
+    font-size: var(--p-font);
+    color: var(--secont-coolor);
+}
+
+header.sticky{
+    background: #4400ff75;
+    padding: 5px 0;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+}
+
+
+
+
+
+
