@@ -287,7 +287,7 @@ footer{
     text-align: center;
     padding: 50px 0;
     font-size: var(--p-font);
-    color var(--secont-coolor);
+    color: var(--secont-coolor);
 }
 
 header.sticky{

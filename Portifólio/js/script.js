@@ -4,6 +4,7 @@ window.addEventListener("scroll" , function(){
 
 })
 
+/*
 let menu = document.querySelector('#navbar-icon'); 
 let navlist = document.querySelector('.navbar-header');
 
@@ -11,7 +12,16 @@ menu.onclick = () => {
     menu.classList.toggle('bx-x'); 
     navlist.classList.toggle('active');
 }
-
+*/
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  
 const sr = ScrollReveal({
 
     distance: '50px', 
