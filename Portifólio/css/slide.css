@@ -196,12 +196,12 @@ iframe{
       grid-template-columns: 2fr;
   }
   .slideshow-container {
-    max-width: 500px;
+    max-width: 400px;
     position: relative;
     margin: auto;
     border-radius: 10px;
   }
   iframe {
-    width: 500px;
+    width: 400px;
   }
 }
