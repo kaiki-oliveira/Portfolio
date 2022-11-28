@@ -140,9 +140,9 @@ iframe{
   }
 }   
 @media(max-width: 768px) { 
-  #navbar-icon{ 
+  #navbar-icon{
     display: block;
-  } 
+}
   :root{
     --big-font: 3rem; 
     --h2-font: 0.8rem; 

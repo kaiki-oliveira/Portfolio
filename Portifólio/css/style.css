@@ -74,6 +74,9 @@ header{
     cursor: pointer;
     display: none;
 }
+#navbar-icon img{
+    width: 40px;
+}
 .bnt-header{
     display: inline-block;
     padding: 10px 25px;
@@ -90,7 +93,10 @@ header{
     background: #0C0DE8;
     transform: scale(1.2);
 }
-
+.fa-solid, .fas {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
 /*home*/
 section{
     max-width: 1110px;
