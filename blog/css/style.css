@@ -115,3 +115,6 @@ section{
 .home-image{
     border: red;
 }
+.home-image img{
+    width: 10;
+}
