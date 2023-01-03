@@ -1,0 +1,28 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgreen;
+    margin: 0;
+}
+header{
+    background: linear-gradient(360deg, green, rgb(121, 248, 142));
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+nav{
+    padding: 10px;
+    text-align: left;
+}
+nav > a{
+    color: white;
+    text-decoration: none;
+    padding-right: 20px;
+}
+main{
+    width: 800px;
+    background-color: white;
+    padding: 10px;
+    position: relative;
+    margin: auto;
+
+}
