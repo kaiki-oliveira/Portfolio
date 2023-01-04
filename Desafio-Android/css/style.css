@@ -1,10 +1,11 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: lightgreen;
+    background-color: rgb(144, 238, 172);
     margin: 0;
 }
+
 header{
-    background: linear-gradient(360deg, green, rgb(121, 248, 142));
+    background: linear-gradient(360deg, rgb(0, 128, 49), rgb(121, 248, 163));
     margin: 0;
     text-align: center;
     color: white;
@@ -24,11 +25,31 @@ main{
     padding: 10px;
     position: relative;
     margin: auto;
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px;
+}
+.main-text h2{
+    background: linear-gradient(50deg, rgba(40, 218, 108, 0.829), rgb(255, 255, 255));
+}
+.main-img{
+    margin-left: 250px;
+}
+.iframe{
+    width: auto;
+    background-color: rgb(0, 128, 75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:20px ;
+    padding-bottom: 20px;
+
+}
+.iframe iframe{
+    width:560px;
+    height:315px;
 }
 .h2 h2{
-    width: 600px;
-    background-color: rgb(0, 128, 0);
+    width: 700px;
+    background-color: rgb(0, 128, 58);
     color: white;
     position: relative;
     margin: auto;
@@ -37,7 +58,7 @@ main{
     border-radius: 10px 10px 0px 0px;
 }
 .extra{
-    width: 600px;
+    width: 700px;
     background-color: lightgreen;
     position: relative;
     margin: auto;
