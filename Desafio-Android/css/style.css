@@ -1,3 +1,10 @@
+/*
+Kaiki Oliveira Nascimento dos Santos
+kaikioliveira.95@gmail.com
+03/01/2023
+desafio do site artigo sobre android do CursoEmVideo
+*/
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(144, 238, 172);
@@ -69,6 +76,9 @@ main{
     display: flex;
     align-items: center;
 }
+.ul ul{
+    margin-right: 100px;
+}
 
 footer{
     background-color: rgb(0, 78, 78);
@@ -79,4 +89,9 @@ footer{
 }
 footer > p{
     margin: 0;
+}
+footer a{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
 }
