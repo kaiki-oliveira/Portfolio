@@ -35,19 +35,34 @@ header{
 header h1{
     color: white;
     font-family: var(--fonte-destaque);
+    
 }
 header p{
     color: white;
+    
 }
 /*NAV*/
 nav{
     background-color: var(--nav-color);
 
 }
+nav a{
+    padding-right: 10px;
+    color: white;
+    text-decoration: none;
+}
 
 /* MAIN*/
 main{
     background-color: white;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+
+    max-width: 800px;
+    min-height: 255px;
+    margin: auto;
+    
+
 }
 main h1{
     color: var(--title-color);
@@ -56,8 +71,41 @@ main h1{
 main h2{
     font-family: var(--fonte-android);
 }
+main img{
+    width: 100%;
+}
+main iframe{
+    width: 100%;
+}
+main a{
+    background-color: var(--header-color1);
+}
+/*ASIDE*/
+aside{
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    
+    
+}
+aside h3{
+    background-color: var(--header-color1);
+    margin: 0;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+aside ul{
+    list-style: none;
+    margin: 10px;
+}
+aside p{
+    margin: 10px;
+}
 /*FOOTER*/
 footer{
     background-color: var(--nav-color);
+    color: white;
+    margin-top: 10px;
+}
+footer a{
     color: white;
 }
