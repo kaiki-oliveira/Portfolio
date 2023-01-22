@@ -96,6 +96,9 @@ main h1{
 }
 main h2{
     font-family: var(--fonte-android);
+    color: var(--title-color);
+    background-image: linear-gradient(to right, var(--header-color2), transparent);
+    padding-left: 10px;
 }
 main p{
     margin: 15px 0px;
