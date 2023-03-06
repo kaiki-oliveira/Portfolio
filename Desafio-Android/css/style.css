@@ -144,9 +144,12 @@ aside h3{
     margin: 0;
     padding: 10px;
     border-radius: 10px 10px 0 0;
+    color: white;
 }
 aside ul{
-    list-style: none;
+    list-style-position: inside;
+    list-style-type: '\2714\00A0';
+    columns: 2;
     margin: 10px;
 }
 aside p{
