@@ -4,7 +4,7 @@ window.onload = function(){
     var ctx = stage.getContext("2d")
     document.addEventListener("keydown",keyPush)//aqui
 
-    setInterval(game, 95)
+    setInterval(game, 100)
 
     const vel = 1
     var vx = vy = 0
