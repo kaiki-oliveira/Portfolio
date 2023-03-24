@@ -43,7 +43,7 @@ window.onload = function(){
 
         ctx.fillStyle = "green"
         for(var i = 0; i < trail.length; i++){
-            ctx.fillRect(trail[i].x*tp, trail[i].y*tp, tp-2, tp-2)
+            ctx.fillRect(trail[i].x*tp, trail[i].y*tp, tp-1, tp-1)
 
             if(trail[i].x == px && trail[i].y == py){
                 vx = vy = 0
