@@ -2,9 +2,9 @@ window.onload = function(){
 
     var stage = document.getElementById('stage')
     var ctx = stage.getContext("2d")
-    document.addEventListener("keydown",keyPush)//aqui
+    document.addEventListener("keydown",keyPush)
 
-    setInterval(game, 105)
+    setInterval(game, 110)
 
     const vel = 1
     var vx = vy = 0
@@ -30,18 +30,18 @@ window.onload = function(){
         if(py < 0){
             py = qp -1
         }
-        if(py > qp -1){ // aqui
+        if(py > qp -1){
             py = 0
         }
         
 
-        ctx.fillStyle = "black"
+        ctx.fillStyle = "#1a1c1b"
         ctx.fillRect(0,0, stage.width, stage.height)
 
-        ctx.fillStyle = "red"
+        ctx.fillStyle = "#990b20"
         ctx.fillRect(ax*tp, ay*tp, tp, tp)
 
-        ctx.fillStyle = "green"
+        ctx.fillStyle = "#07b35d"
         for(var i = 0; i < trail.length; i++){
             ctx.fillRect(trail[i].x*tp, trail[i].y*tp, tp-1, tp-1)
 
