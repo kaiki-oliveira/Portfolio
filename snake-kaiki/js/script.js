@@ -1,4 +1,10 @@
 window.onload = function(){
+    
+    var scoreText = document.getElementById('score')//estudar
+    var score = 0;
+    var highscore = localStorage.getItem("highscore")//estudar
+    var highscoreText = document.getElementById('highscore')//estudar
+    highscoreText.innerText = highscore//estudar
 
     var stage = document.getElementById('stage')
     var ctx = stage.getContext("2d")
@@ -48,6 +54,8 @@ window.onload = function(){
             if(trail[i].x == px && trail[i].y == py){
                 vx = vy = 0
                 tail = 1
+                
+                score = 0
 
                 
             } 
@@ -58,6 +66,14 @@ window.onload = function(){
         }
         if(ax == px && ay == py){
             tail++
+            
+            score ++
+            scoreText.innerText = score
+            if(score > highscore){
+            highscore = score
+            }
+            localStorage.setItem("highscore", highscore)
+            highscoreText.innerText = highscore
 
             ax = Math.floor(Math.random()*qp)
             ay = Math.floor(Math.random()*qp)
