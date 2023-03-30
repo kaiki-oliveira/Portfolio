@@ -17,7 +17,7 @@ window.onload = function(){
     var px = 10
     var py = 12
     var tp = 30
-    var qp = 20
+    var qp = 18
     var ax = ay = 15
     
 
