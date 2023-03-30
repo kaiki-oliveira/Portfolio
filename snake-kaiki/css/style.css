@@ -21,3 +21,9 @@ header h1{
     color: yellow;
     font-size: 2,5em;
 }
+header p{
+    color: white ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: normal;
+    text-align: center;
+}
