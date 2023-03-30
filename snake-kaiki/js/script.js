@@ -75,6 +75,7 @@ window.onload = function(){
             localStorage.setItem("highscore", highscore)
             highscoreText.innerText = highscore
 
+            
             ax = Math.floor(Math.random()*qp)
             ay = Math.floor(Math.random()*qp)
         }
