@@ -1,5 +1,5 @@
 window.onload = function(){
-    
+
     var scoreText = document.getElementById('score')//estudar
     var score = 0;
     var highscore = localStorage.getItem("highscore")//estudar
@@ -10,18 +10,19 @@ window.onload = function(){
     var ctx = stage.getContext("2d")
     document.addEventListener("keydown",keyPush)
 
-    setInterval(game, 110)
+    setInterval(game, 100)
 
     const vel = 1
     var vx = vy = 0
     var px = 10
-    var py = 15
+    var py = 12
     var tp = 30
     var qp = 20
     var ax = ay = 15
+    
 
-    var trail = []
-    tail = 1
+    var trail = [1]
+    tail = 2
 
     function game(){
         px += vx
@@ -36,7 +37,7 @@ window.onload = function(){
         if(py < 0){
             py = qp -1
         }
-        if(py > qp -1){
+        if(py > qp -1){ // aqui
             py = 0
         }
         
@@ -53,20 +54,27 @@ window.onload = function(){
 
             if(trail[i].x == px && trail[i].y == py){
                 vx = vy = 0
-                tail = 1
+                tail = 2
                 
                 score = 0
+                
+                
+                
+                
 
                 
             } 
+            
         }
+        
+        
+        
         trail.push({x:px, y:py})
         while(trail.length > tail){
             trail.shift()
         }
         if(ax == px && ay == py){
             tail++
-            
             score ++
             scoreText.innerText = score
             if(score > highscore){
@@ -75,7 +83,6 @@ window.onload = function(){
             localStorage.setItem("highscore", highscore)
             highscoreText.innerText = highscore
 
-            
             ax = Math.floor(Math.random()*qp)
             ay = Math.floor(Math.random()*qp)
         }
