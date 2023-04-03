@@ -1,0 +1,120 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+body{
+    background-color:var(--bg-color) ;
+    color:var(--text-color) ;
+}
+:root{
+    --bg-color: rgb(176, 176, 176);
+    --text-color: black;
+    --secont-color:rgb(255, 255, 255);
+    --big-font:4.5rem;
+    --h2-font:3.2rem;
+    --p-font:1.2rem;
+}
+/* header */
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    background-color: rgb(0, 0, 0);
+}
+#header{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.logo-header img{
+    width: 60px;
+}
+.navbar-header{
+    display: flex;
+    list-style: none;
+}
+.navbar-header li{
+    position: relative;
+}
+.navbar-header a{
+    color: var(--secont-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    padding: 10px 20px;
+}
+.navbar-header a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    bottom: -5px;
+    left: 0;
+    transition: ease .50s;
+}
+.navbar-header a:hover::after{
+    width: 100%;
+}
+/* home */
+section{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 100px; 
+}
+.home{
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    grid-gap:5rem; 
+}
+.home-text h1{
+    margin: 12px 0 25px 0;
+    font-size: var(--big-font);
+}
+.home-text h5{
+    margin-bottom: 20px;
+    font-size: 24px;    
+}
+.home-text span{
+    color: red;
+}
+.home-text p{
+    font-size: var(--p-font);
+    color: var(--text-color);
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.home-social-media a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: red;
+    color: var(--text-color);
+    margin: 0 20px 30px 0;
+}
+.home-social-media a:hover{
+    transform: scale(1.2);
+    background: rgb(116, 0, 0);
+    transition: ease .50s;
+}
+.home-image{
+    border: red;
+}
+.home-image img{
+    width: 550px;
+}
