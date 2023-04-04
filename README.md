@@ -2,7 +2,7 @@
 
 <div align="center"> <p> Projeto desenvolvido durante as aulas de desenvolvimento web no SENAI </p> </div>
 
-<div align="center"> <a href="https://www.w3schools.com">Visit W3Schools.com!</a></div>
+<div align="center"> <a href="https://kaiki-oliveira.github.io/Portfolio/">Clique aqui para acessar o meu portfólio.</a></div>
 
 
 <div align="center"> </div>
