@@ -223,6 +223,17 @@ section{
 }
 
 /*portfolio*/
+
+.aviso{
+    margin-top: 200px ;
+    padding: 50px;
+    color: red;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 .portfolio-head{
     text-align: center;
 }
