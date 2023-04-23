@@ -23,3 +23,18 @@ const sr = ScrollReveal({
 })
     
 sr.reveal('.home-text', {delay: 350, origin: 'left'})
+
+//mudança de cor
+function carregar() {
+  var agora = new Date()
+  var hora = agora.getHours()
+  
+
+  if(hora <= 4 || hora >= 18){
+    window.document.body.style.background = '#00103f'
+    
+
+  }
+  
+}
+

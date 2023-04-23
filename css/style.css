@@ -28,7 +28,7 @@ header{
     top: 0;
     right: 0;
     z-index: 10;
-    background-color: #5d6dff;
+    background: #5d6dff;
 }
 #header{
     max-width: 1100px;
