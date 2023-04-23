@@ -31,7 +31,7 @@ function carregar() {
   
 
   if(hora <= 4 || hora >= 18){
-    window.document.body.style.background = '#2252a5'
+    window.document.body.style.background = '#3a42a5'
     
 
   }
