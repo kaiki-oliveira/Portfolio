@@ -1,10 +1,10 @@
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
-  }
+}
   
   
-  @media(max-width: 1200px) { 
+@media(max-width: 1200px) { 
       
     section{
   
@@ -24,8 +24,8 @@
       --p-font: 1rem; 
       transition: .3s;
     }
-  }
-  @media(max-width: 1050px){
+}
+@media(max-width: 1050px){
     .slideshow-container {
       max-width: 900px;
       position: relative;
@@ -38,8 +38,8 @@
       margin: auto;
       border-radius: 10px;
     }
-  }
-  @media(max-width: 955px){
+}
+@media(max-width: 955px){
     .slideshow-container {
       max-width: 800px;
       position: relative;
@@ -52,9 +52,9 @@
       margin: auto;
       border-radius: 10px;
     }
-  }
+}
   
-  @media(max-width: 860px) {
+@media(max-width: 860px) {
       
     .home{
       grid-template-columns: 1fr;  
@@ -77,9 +77,9 @@
       margin: auto;
       border-radius: 10px;
     }
-  }   
+}   
   
-  @media(max-width: 670px) { 
+@media(max-width: 670px) { 
     #navbar-icon{
       display: block;
     }
@@ -90,9 +90,11 @@
     } 
     .home{
       min-height: 80%;
+      
     }
     .home-text{
-      max-width: 255px;
+      
+      text-align: center;
     }
     .home-image img{
       max-width: 255px;
@@ -140,11 +142,9 @@
     }
     .about-text{
         text-align: center;
-        max-width: 255px;
     }    
     .about-text h3{
       font-size: 30px;
-      max-width: 255px;
     }
     .portfolio-content {
         grid-template-columns: 2fr;
@@ -172,15 +172,8 @@
       max-width: 235px;
     }
   
-    /*curriculo*/
-    .curriculo{
-      max-width: 255px;
-    }
-    .curriculo img{
-      max-width: 290px;
-    }
-  }
-  @media(max-width: 520px) { 
+}
+@media(max-width: 520px) { 
     #navbar-icon{
       display: block;
     }
@@ -193,7 +186,7 @@
       min-height: 80%;
     }
     .home-text{
-      max-width: 255px;
+        text-align: center;
     }
     .home-image img{
       max-width: 255px;
@@ -241,11 +234,9 @@
     }
     .about-text{
         text-align: center;
-        max-width: 255px;
     }    
     .about-text h3{
       font-size: 30px;
-      max-width: 255px;
     }
     .portfolio-content {
         grid-template-columns: 2fr;
@@ -275,17 +266,9 @@
       margin: auto;
       max-width: 235px;
     }
+}
   
-    /*curriculo*/
-    .curriculo{
-      max-width: 255px;
-    }
-    .curriculo img{
-      max-width: 290px;
-    }
-  }
-  
-  @media(max-width: 340px) { 
+@media(max-width: 340px) { 
     #navbar-icon{
       display: block;
     }
@@ -298,7 +281,7 @@
       min-height: 80%;
     }
     .home-text{
-      max-width: 255px;
+      text-align: center;
     }
     .home-image img{
       max-width: 255px;
@@ -346,11 +329,9 @@
     }
     .about-text{
         text-align: center;
-        max-width: 255px;
     }    
     .about-text h3{
       font-size: 30px;
-      max-width: 255px;
     }
     .portfolio-content {
         grid-template-columns: 2fr;
@@ -380,12 +361,4 @@
       margin: auto;
       max-width: 235px;
     }
-  
-    /*curriculo*/
-    .curriculo{
-      max-width: 255px;
-    }
-    .curriculo img{
-      max-width: 290px;
-    }
-  }
+}
