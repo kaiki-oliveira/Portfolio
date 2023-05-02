@@ -1,0 +1,391 @@
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+  
+  
+  @media(max-width: 1200px) { 
+      
+    section{
+  
+      padding-left: 20px; 
+      padding-right: 20px; 
+      transition: .3s;
+    }
+    
+    .home-image img{
+      max-width: 450px; 
+      transition: .3s;
+    } 
+    
+    :root{
+      --big-font: 4rem; 
+      --h2-font: 2.5rem; 
+      --p-font: 1rem; 
+      transition: .3s;
+    }
+  }
+  @media(max-width: 1050px){
+    .slideshow-container {
+      max-width: 900px;
+      position: relative;
+      margin: auto;
+      border-radius: 10px;
+    }
+    .img img{ 
+      max-width: 900px;
+      position: relative;
+      margin: auto;
+      border-radius: 10px;
+    }
+  }
+  @media(max-width: 955px){
+    .slideshow-container {
+      max-width: 800px;
+      position: relative;
+      margin: auto;
+      border-radius: 10px;
+    }
+    .img img{ 
+      max-width: 800px;
+      position: relative;
+      margin: auto;
+      border-radius: 10px;
+    }
+  }
+  
+  @media(max-width: 860px) {
+      
+    .home{
+      grid-template-columns: 1fr;  
+      min-height: 100vh; 
+      grid-gap: 1rem;
+    } 
+  
+    .home-image{
+      text-align: center; 
+    }
+    .slideshow-container {
+      max-width: 600px;
+      position: relative;
+      margin: auto;
+      border-radius: 10px;
+    }
+    .img img{ 
+      max-width: 600px;
+      position: relative;
+      margin: auto;
+      border-radius: 10px;
+    }
+  }   
+  
+  @media(max-width: 670px) { 
+    #navbar-icon{
+      display: block;
+    }
+    :root{
+      --big-font: 3rem; 
+      --h2-font: 0.8rem; 
+      transition: .3s;
+    } 
+    .home{
+      min-height: 80%;
+    }
+    .home-text{
+      max-width: 255px;
+    }
+    .home-image img{
+      max-width: 255px;
+    }
+  
+    .navbar-header {
+      position: absolute;
+      top: -1000px; 
+      Left: 0; 
+      right: 0; 
+      flex-direction: column; 
+      background: #CCC; 
+      opacity: 0.8; 
+      text-align: center; 
+      transition: all .50s;
+    }
+    .navbar-header a{
+      display: block; 
+      padding: 0.8rem;
+    }
+    .navbar-header a:hover{
+      background: var(--main-color); 
+      color: var(--bg-color);
+    }
+        
+    .navbar-header a::after{ 
+      display: none;   
+    }
+    .navbar-header.active{
+      top: 100%;
+    }
+        
+    .services-itens {
+      grid-template-columns: 1fr;
+    }
+    .about{   
+        grid-template-columns: 1fr;
+    }
+  
+    .about-image {
+        text-align: center;
+    }
+    .about-image img{
+      max-width: 255px;
+    }
+    .about-text{
+        text-align: center;
+        max-width: 255px;
+    }    
+    .about-text h3{
+      font-size: 30px;
+      max-width: 255px;
+    }
+    .portfolio-content {
+        grid-template-columns: 2fr;
+    }
+    .slideshow-container {
+      max-width: 500px;
+      position: relative;
+      margin: auto;
+      border-radius: 10px;
+    }
+    .portfolio{
+      max-width: 500px;
+      position: relative;
+      margin: auto;
+      border-radius: 10px;
+    }
+    .img img {
+      width: 460px;
+    }
+    .contact{
+      max-width: 255px;
+    }
+    .form form{
+      margin: auto;
+      max-width: 235px;
+    }
+  
+    /*curriculo*/
+    .curriculo{
+      max-width: 255px;
+    }
+    .curriculo img{
+      max-width: 290px;
+    }
+  }
+  @media(max-width: 520px) { 
+    #navbar-icon{
+      display: block;
+    }
+    :root{
+      --big-font: 3rem; 
+      --h2-font: 0.8rem; 
+      transition: .3s;
+    } 
+    .home{
+      min-height: 80%;
+    }
+    .home-text{
+      max-width: 255px;
+    }
+    .home-image img{
+      max-width: 255px;
+    }
+  
+    .navbar-header {
+      position: absolute;
+      top: -1000px; 
+      Left: 0; 
+      right: 0; 
+      flex-direction: column; 
+      background: #CCC; 
+      opacity: 0.8; 
+      text-align: center; 
+      transition: all .50s;
+    }
+    .navbar-header a{
+      display: block; 
+      padding: 0.8rem;
+    }
+    .navbar-header a:hover{
+      background: var(--main-color); 
+      color: var(--bg-color);
+    }
+        
+    .navbar-header a::after{ 
+      display: none;   
+    }
+    .navbar-header.active{
+      top: 100%;
+    }
+        
+    .services-itens {
+      grid-template-columns: 1fr;
+    }
+    .about{   
+        grid-template-columns: 1fr;
+    }
+  
+    .about-image {
+        text-align: center;
+    }
+    .about-image img{
+      max-width: 255px;
+    }
+    .about-text{
+        text-align: center;
+        max-width: 255px;
+    }    
+    .about-text h3{
+      font-size: 30px;
+      max-width: 255px;
+    }
+    .portfolio-content {
+        grid-template-columns: 2fr;
+    }
+    .slideshow-container {
+      max-width: 350px;
+      position: relative;
+      margin: auto;
+      border-radius: 10px;
+    }
+    .portfolio{
+      max-width: 350px;
+      position: relative;
+      margin: auto;
+      border-radius: 10px;
+    }
+    .img img {
+      max-width: 310px;
+      position: relative;
+      margin: auto;
+      border-radius: 10px;
+    }
+    .contact{
+      max-width: 255px;
+    }
+    .form form{
+      margin: auto;
+      max-width: 235px;
+    }
+  
+    /*curriculo*/
+    .curriculo{
+      max-width: 255px;
+    }
+    .curriculo img{
+      max-width: 290px;
+    }
+  }
+  
+  @media(max-width: 340px) { 
+    #navbar-icon{
+      display: block;
+    }
+    :root{
+      --big-font: 3rem; 
+      --h2-font: 0.8rem; 
+      transition: .3s;
+    } 
+    .home{
+      min-height: 80%;
+    }
+    .home-text{
+      max-width: 255px;
+    }
+    .home-image img{
+      max-width: 255px;
+    }
+  
+    .navbar-header {
+      position: absolute;
+      top: -1000px; 
+      Left: 0; 
+      right: 0; 
+      flex-direction: column; 
+      background: #CCC; 
+      opacity: 0.8; 
+      text-align: center; 
+      transition: all .50s;
+    }
+    .navbar-header a{
+      display: block; 
+      padding: 0.8rem;
+    }
+    .navbar-header a:hover{
+      background: var(--main-color); 
+      color: var(--bg-color);
+    }
+        
+    .navbar-header a::after{ 
+      display: none;   
+    }
+    .navbar-header.active{
+      top: 100%;
+    }
+        
+    .services-itens {
+      grid-template-columns: 1fr;
+    }
+    .about{   
+        grid-template-columns: 1fr;
+    }
+  
+    .about-image {
+        text-align: center;
+    }
+    .about-image img{
+      max-width: 255px;
+    }
+    .about-text{
+        text-align: center;
+        max-width: 255px;
+    }    
+    .about-text h3{
+      font-size: 30px;
+      max-width: 255px;
+    }
+    .portfolio-content {
+        grid-template-columns: 2fr;
+    }
+    .slideshow-container {
+      max-width: 255px;
+      position: relative;
+      margin: auto;
+      border-radius: 10px;
+    }
+    .portfolio{
+      max-width: 255px;
+      position: relative;
+      margin: auto;
+      border-radius: 10px;
+    }
+    .img img {
+      max-width: 215px;
+      position: relative;
+      margin: auto;
+      border-radius: 10px;
+    }
+    .contact{
+      max-width: 255px;
+    }
+    .form form{
+      margin: auto;
+      max-width: 235px;
+    }
+  
+    /*curriculo*/
+    .curriculo{
+      max-width: 255px;
+    }
+    .curriculo img{
+      max-width: 290px;
+    }
+  }
