@@ -38,3 +38,12 @@ function carregar() {
   
 }
 
+function abrirHtml(){
+  window.open('https://developer.mozilla.org/en-US/docs/Web/HTML')
+}
+function abrirCss(){
+  window.open('https://developer.mozilla.org/en-US/docs/Web/CSS')
+}
+function abrirJavaScript(){
+  window.open('https://developer.mozilla.org/en-US/docs/Web/JavaScript')
+}
