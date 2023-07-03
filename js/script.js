@@ -38,6 +38,7 @@ function carregar() {
   
 }
 
+//abrir documentação
 function abrirHtml(){
   window.open('https://developer.mozilla.org/en-US/docs/Web/HTML')
 }
