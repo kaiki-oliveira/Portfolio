@@ -149,6 +149,9 @@ section{
 .home-image{
     border: #0808d1;
 }
+.home-image img{
+    width: 500px;
+}
 .btn{
     display: inline-block;
     color: var(--bg-color);
