@@ -48,3 +48,13 @@ function abrirCss(){
 function abrirJavaScript(){
   window.open('https://developer.mozilla.org/en-US/docs/Web/JavaScript')
 }
+
+//título muda ao sair da página
+let docTitle = document.title;
+window.addEventListener("blur", () =>{
+  document.title = "Volte aqui!";
+})
+
+window.addEventListener("focus", () =>{
+  document.title = docTitle;
+})
