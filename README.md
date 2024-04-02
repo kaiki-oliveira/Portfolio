@@ -2,7 +2,7 @@
 
 <h1> 📖Sobre </h1>
 
-<p> Projeto desenvolvido durante as aulas de desenvolvimento web no SENAI. Está sendo atualizado conforme vou adquirindo conhecimento. </p> 
+<p> Portfólio desenvolvido para raticar e demonstrar meu trabalho. </p> 
 
 <hr>
 
